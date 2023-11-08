@@ -1,0 +1,235 @@
+body
+{
+    background-color: #f8f8f8;
+    color: rgb(73, 73, 73);
+   
+}
+
+header
+{
+   
+    overflow:hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+   
+    
+}
+
+.name
+{
+    font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 32px;
+    
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: name;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    background-color:#f8f8f8;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+a
+{
+    text-decoration: none; 
+    font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+  
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+li 
+{ 
+   list-style: none;
+}
+
+a:hover
+{   
+    background-color: rgb(168, 168, 168);
+}
+
+a:link
+{   
+    color: rgb(73, 73, 73);
+}
+
+a:visited
+{   
+    color: rgb(29, 29, 29);
+}
+
+.hero
+{   display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.heroimg
+{
+    width: 300px;
+    border-radius: 50%;
+    margin: 75px 50px 75px 25px;
+    animation-name: heroimg;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+   
+ 
+}
+.panel
+{
+    margin: 0 0 0 50px;
+    animation-name: panel;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  
+}
+
+.welcome
+{
+    font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 28px;
+}
+
+.description
+{
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    width: 500px;
+    text-align: justify;
+    line-height:1.5;
+    
+}
+
+.gallery
+{
+    max-width: max-content;
+    display: block;
+    margin: auto;
+    animation-name: others;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.title
+{
+    display: flex;
+    justify-content: left;
+    font-size: 48px;
+  
+    font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.photos
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+    grid-template-rows: repeat(2, 17vw);
+    grid-gap: 10px;
+    margin: 0 0 75px 0;
+}
+
+.galleryimg
+{
+   width: auto;
+  max-width: 300px;
+  height: auto;
+  max-height: 300px;
+  margin: 15px;
+}
+
+.about
+{
+    max-width: max-content;
+    display: block;
+    margin: auto;
+    animation-name: others;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.title2
+{
+    display: flex;
+    justify-content: left;
+    font-size: 48px;
+  
+    font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.description2
+{
+    max-width: 900px;
+    font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+    line-height:1.5;
+    text-align: justify;
+}
+
+
+
+footer
+{
+    text-align: center;
+    margin: 100px 0 0px 0;
+    font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+   padding: 15px;
+   
+}
+
+
+/*animation*/
+
+@keyframes name
+{
+  from {
+    transform: translateY(-30px);
+    opacity: 0%;
+  }
+
+}
+
+@keyframes heroimg
+{
+  from {
+    transform: translatex(-200px);
+    opacity: 0%;
+  }
+
+}
+
+@keyframes panel
+{
+  from {
+    transform: translatex(200px);
+    opacity: 0%;
+  }
+
+}
+
+@keyframes others
+{
+    from{
+        transform:translateY(200px);
+        opacity: 0%;
+    }
+}
+
+
+
+
+
